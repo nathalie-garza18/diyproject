@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alzheimer's At-Home Diagnostic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Alzheimer's At-Home Diagnostic App!</h1>
+        <div class="button-container">
+            <button onclick="createAccount()">Create Account</button>
+            <button onclick="logIn()">Log In</button>
+            <button onclick="viewResults()">View Previous Results</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.button-container button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+}
+
+// Placeholder functions for the buttons
+function createAccount() {
+    console.log("Create Account button clicked.");
+    // Redirect logic can be added here, e.g., window.location.href = 'createAccount.html';
+}
+
+function logIn() {
+    console.log("Log In button clicked.");
+    // Redirect logic for login page can be added here
+}
+
+function viewResults() {
+    console.log("View Previous Results button clicked.");
+    // Redirect logic for viewing results can be added here
+}
